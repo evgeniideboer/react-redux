@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
+import Test from "./test";
 
 function App() {
   const dispatch = useDispatch();
-  const cash = useSelector((state) => state.cash);
+  const cash = useSelector((state) => state.cash.cash);
   console.log(cash);
 
   const addCash = (cash) => {
@@ -25,6 +26,9 @@ function App() {
         <button onClick={() => getCash(Number(prompt()))}>
           Снять со счёта
         </button>
+        <div style={{ fontSize: "3rem" }}>
+          <Test />
+        </div>
       </div>
     </div>
   );

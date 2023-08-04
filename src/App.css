@@ -3,13 +3,14 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: antiquewhite;
 }
 
 .app button {
   margin: 10px;
   padding: 10px 20px;
-  color: #fff;
-  font-size: 18px;
+  color: darkslategray;
+  font-size: 30px;
   background-color: aquamarine;
   border: none;
   border-radius: 8px;
